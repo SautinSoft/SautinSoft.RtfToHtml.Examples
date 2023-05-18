@@ -1,7 +1,9 @@
 ![Nuget](https://img.shields.io/nuget/v/sautinsoft.rtftohtml) ![Nuget](https://img.shields.io/nuget/dt/sautinsoft.rtftohtml) 
 # .NET SDK to convert RTF, DOCX to HTML
 
-![rtf](https://github.com/SautinSoft/SautinSoft.RtfToHtml.Examples/assets/79837963/2d86c7f4-4a96-45f1-adeb-32f49c68686f)
+![rtf](https://github-production-user-asset-6210df.s3.amazonaws.com/79837963/239169926-2d86c7f4-4a96-45f1-adeb-32f49c68686f.png)
+
+
 
 [SautinSoft.RtfToHtml](https://sautinsoft.com/products/rtf-to-html/) is .NET assembly to convert Text, RTF, DOCX to HTML. Provides your by API to transform Word documents to HTML5, 4.01, 3.2, XHTML with a lot of converting options.
 
