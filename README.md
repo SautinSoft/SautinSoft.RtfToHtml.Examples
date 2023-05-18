@@ -1,41 +1,68 @@
-[RTF to HTML .Net by SautinSoft](https://sautinsoft.com/products/rtf-to-html/) is 100% written in C# .NET assembly which provides a wide set of API for developers. It gives you ability to add these functions:
+![Nuget](https://img.shields.io/nuget/v/sautinsoft.rtftohtml) ![Nuget](https://img.shields.io/nuget/dt/sautinsoft.rtftohtml) 
+# .NET SDK to convert RTF, DOCX to HTML
 
-Convert RTF to HTML. </br>
-Convert DOCX to HTML</br>
-Convert Text to HTML.</br>
-Convert RTF to Text.</br>
-The SDK is 100% C# .NET library with wide abilities of exporting any RTF (rich text format) and Text document to HTML, XHTML with and without CSS.</br>
+![rtf](https://github.com/SautinSoft/SautinSoft.RtfToHtml.Examples/assets/79837963/2d86c7f4-4a96-45f1-adeb-32f49c68686f)
 
-The component supports conversion of RTF to HTML with:</br>
+[SautinSoft.RtfToHtml](https://sautinsoft.com/products/rtf-to-html/) is .NET assembly to convert Text, RTF, DOCX to HTML. Provides your by API to transform Word documents to HTML5, 4.01, 3.2, XHTML with a lot of converting options.
 
-Full text formatting (font face, color, size, bold, italic, underline, double underline, strike, superscript, subscript).</br>
-Images in JPG, PNG, GIF, BMP formats (stored separately or inside HTML document using base64 encoding).</br>
-Tables (borders, background, nested tables, merged cells, nested tables).</br>
-Font colors, face, size.</br>
-Hyperlinks and anchors.</br>
-Ordered and unordered lists.</br>
-Tracking changes.</br>
-Full Unicode support.</br>
-Special characters.</br>
+## Quick links
 
-This repository contains [Examples for RTF to HTML .Net](https://sautinsoft.com/products/rtf-to-html/examples/) to help you learn and write your own applications.
++ [Developer Guide](https://sautinsoft.com/products/rtf-to-html/help/net/)
++ [API Reference](https://sautinsoft.com/products/rtf-to-html/help/net/api-reference/html/N_SautinSoft_RtfToHtml.htm)
 
-<p align="center">
+## Top Features
 
-  <a title="Download complete RTF to HTML .Net" href="https://sautinsoft.com/thankyou.php?download=rtftohtml_dll_net.zip">
-	<img src="https://sautinsoft.com/images/zip_file_download.png" />
-  </a>
-</p>
++ [Convert RTF file to HTML file.](https://sautinsoft.com/products/rtf-to-html/help/net/developer-guide/convert-rtf-to-html-csharp-vb-net.php)
++ [Convert DOCX file to HTML file.](https://sautinsoft.com/products/rtf-to-html/help/net/developer-guide/convert-docx-to-html-csharp-vb-net.php)
++ [Convert Text file to HTML file.](https://sautinsoft.com/products/rtf-to-html/help/net/developer-guide/convert-text-to-html-csharp-vb-net.php)
 
-Directory | Description
---------- | -----------
-[Examples for RTF to HTML .Net](https://sautinsoft.com/products/rtf-to-html/examples/) | A collection of C#, VB.NET, php examples that help you learn and explore the API features
+## System Requirement
 
+* .NET Framework 4.6.1 - 4.8.1
+* .NET Core 2.0 - 3.1, .NET 5, 6, 7, 8
+* .NET Standard 2.0
+* Windows, Linux, macOS, Android, iOS.
+
+## Getting Started with RTF to HTML .Net
+
+Are you ready to give RTF to HTML .NET a try? Simply execute `Install-Package sautinsoft.rtftohtml` from Package Manager Console in Visual Studio to fetch the NuGet package. If you already have RTF to HTML .NET and want to upgrade the version, please execute `Update-Package sautinsoft.rtftohtml` to get the latest version.
+
+## Convert RTF to HTML
+
+```csharp
+string inpFile = @"..\..\..\..\example.rtf";
+string outfile = Path.GetFullPath("Result.html");
+            
+RtfToHtml r = new RtfToHtml();
+r.Convert(inpFile, outfile, new HtmlFixedSaveOptions() {Title = "SautinSoft Example." });
+```
+## Convert DOCX to HTML
+
+```csharp
+string inpFile = @"..\..\..\..\example.docx";
+string outfile = Path.GetFullPath("Result.html");
+            
+RtfToHtml r = new RtfToHtml();
+r.Convert(inpFile, outfile, new HtmlFixedSaveOptions() {Title = "SautinSoft Example." });
+```
+
+## Convert Txt to HTML
+
+```csharp
+string inpFile = @"..\..\..\..\example.txt";
+string outfile = Path.GetFullPath("Result.html");
+            
+RtfToHtml r = new RtfToHtml();
+r.Convert(inpFile, outfile, new HtmlFixedSaveOptions() {Title = "SautinSoft Example." });
+
+```
 
 ## Resources
 
-+ **Website:** [www.sautinsoft.com](http://www.sautinsoft.com)
++ **Website:** [www.sautinsoft.com](https://www.sautinsoft.com)
 + **Product Home:** [RTF to HTML .Net](https://sautinsoft.com/products/rtf-to-html/)
-+ **Download:** [Download RTF to HTML .Net](https://sautinsoft.com/products/rtf-to-html/download.php)
-+ **Documentation:** [RTF to HTML .Net Documentation API](https://sautinsoft.net/help/rtf-to-html-net/html/getting-started.htm)
-+ **Support:** [You are always welcome at SautinSoft company with your feedback and questions, it helps us to work more effective!](https://sautinsoft.com/support.php)
++ [Download SautinSoft.RtfToHtml](https://sautinsoft.com/products/rtf-to-html/download.php)
++ [Developer Guide](https://sautinsoft.com/products/rtf-to-html/help/net/)
++ [API Reference](https://sautinsoft.com/products/rtf-to-html/help/net/api-reference/html/N_SautinSoft_RtfToHtml.htm)
++ [Support Team](https://sautinsoft.com/support.php)
++ [License](https://sautinsoft.com/products/rtf-to-html/help/net/getting-started/agreement.php)
