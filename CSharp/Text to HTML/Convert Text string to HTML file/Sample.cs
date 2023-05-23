@@ -19,7 +19,7 @@ namespace Example
         static void ConvertTextToHtml()
         {
             // This file is necessary to get Text content as string.
-            string inpFile = @"..\..\example.txt";
+            string inpFile = @"..\..\..\example.txt";
             string rtfString = File.ReadAllText(inpFile);
 
             string outfile = Path.GetFullPath("Result.html");

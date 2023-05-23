@@ -18,7 +18,7 @@ namespace Example
         /// </summary>
         static void ConvertRtfToHtml()
         {
-            string inpFile = @"..\..\example.rtf";
+            string inpFile = @"..\..\..\example.rtf";
             string outfile = Path.GetFullPath("Result.html");
             
             RtfToHtml r = new RtfToHtml();

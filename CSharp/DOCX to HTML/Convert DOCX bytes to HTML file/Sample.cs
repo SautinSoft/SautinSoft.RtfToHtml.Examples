@@ -19,7 +19,7 @@ namespace Example
         static void ConvertDocxToHtml()
         {
             // This file is necessary to get DOCX content as byte array.
-            string inpFile = @"..\..\example.docx";
+            string inpFile = @"..\..\..\example.docx";
             byte[] docxBytes = File.ReadAllBytes(inpFile);
 
             string outfile = Path.GetFullPath("Result.html");

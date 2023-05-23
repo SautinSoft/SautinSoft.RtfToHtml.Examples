@@ -18,7 +18,7 @@ namespace Example
         /// </summary>
         static void SetCssStream()
         {
-            string inpFile = @"..\..\example.docx";
+            string inpFile = @"..\..\..\example.docx";
             string outFile = @"Result.html";
             string cssFile = @"Styles.css";
 

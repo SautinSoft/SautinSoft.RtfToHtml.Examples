@@ -18,7 +18,7 @@ namespace Example
         /// </summary>
         static void BuildNavigationPage()
         {
-            string inpFile = @"..\..\toc.docx";
+            string inpFile = @"..\..\..\toc.docx";
             string outFile = @"Result.html";
 
             RtfToHtml r = new RtfToHtml();

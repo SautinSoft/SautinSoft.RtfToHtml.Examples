@@ -18,7 +18,7 @@ namespace Example
         /// </summary>
         static void HeadersFootersExportMode()
         {
-            string inpFile = @"..\..\doc with header and footer.docx";
+            string inpFile = @"..\..\..\doc with header and footer.docx";
             string outFile = @"Result.html";
 
             RtfToHtml r = new RtfToHtml();

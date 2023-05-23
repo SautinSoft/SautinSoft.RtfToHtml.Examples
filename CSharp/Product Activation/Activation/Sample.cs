@@ -27,7 +27,7 @@ namespace Example
  
 			RtfToHtml r = new RtfToHtml();
 
-            string inpFile = @"..\..\example.docx";
+            string inpFile = @"..\..\..\example.docx";
             string outFile = "Result.html";
 
             r.Convert(inpFile, outFile, new HtmlFixedSaveOptions() { Title = "SautinSoft.RtfToHtml Activation" });

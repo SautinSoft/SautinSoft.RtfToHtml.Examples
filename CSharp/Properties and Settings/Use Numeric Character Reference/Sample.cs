@@ -18,7 +18,7 @@ namespace Example
         /// </summary>
         static void UseNumericCharacterReference()
         {
-            string inpFile = @"..\..\utf-8.rtf";
+            string inpFile = @"..\..\..\utf-8.rtf";
             string outFile = @"Result.html";
 
             RtfToHtml r = new RtfToHtml();

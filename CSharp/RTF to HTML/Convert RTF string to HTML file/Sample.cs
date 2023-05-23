@@ -19,7 +19,7 @@ namespace Example
         static void ConvertRtfToHtml()
         {
             // This file is necessary to get RTF content as string.
-            string inpFile = @"..\..\example.rtf";
+            string inpFile = @"..\..\..\example.rtf";
             string rtfString = File.ReadAllText(inpFile);
 
             string outfile = Path.GetFullPath("Result.html");

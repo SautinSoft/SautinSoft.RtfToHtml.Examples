@@ -18,7 +18,7 @@ namespace Example
         /// </summary>
         static void ConvertTextToHtml()
         {
-            string inpFile = @"..\..\example.txt";
+            string inpFile = @"..\..\..\example.txt";
             string htmlString = String.Empty;
             
             RtfToHtml r = new RtfToHtml();

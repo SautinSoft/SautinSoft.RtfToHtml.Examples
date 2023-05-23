@@ -19,7 +19,7 @@ namespace Example
         static void FixedAndFlowingHtml()
         {
             // This file is necessary to get DOCX content as byte array.
-            string inpFile = @"..\..\example.docx";
+            string inpFile = @"..\..\..\example.docx";
             string htmlFixedFile = @"Fixed.html";
             string htmlFlowingFile = @"Flowing.html";
 

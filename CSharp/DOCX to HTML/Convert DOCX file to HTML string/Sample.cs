@@ -18,7 +18,7 @@ namespace Example
         /// </summary>
         static void ConvertDocxToHtml()
         {
-            string inpFile = @"..\..\example.docx";
+            string inpFile = @"..\..\..\example.docx";
             string htmlString = String.Empty;
             
             RtfToHtml r = new RtfToHtml();

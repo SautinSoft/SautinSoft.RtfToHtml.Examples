@@ -18,7 +18,7 @@ namespace Example
         /// </summary>
         static void SplitCriteria()
         {
-            string inpFile = @"..\..\toc.docx";
+            string inpFile = @"..\..\..\toc.docx";
             string outFile = @"toc.html";
 
             RtfToHtml r = new RtfToHtml();

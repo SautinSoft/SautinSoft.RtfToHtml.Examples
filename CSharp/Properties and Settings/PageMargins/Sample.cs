@@ -18,7 +18,7 @@ namespace Example
         /// </summary>
         static void PageMargins()
         {
-            string inpFile = @"..\..\example.docx";
+            string inpFile = @"..\..\..\example.docx";
             string outFile = @"Result.html";
 
             RtfToHtml r = new RtfToHtml();

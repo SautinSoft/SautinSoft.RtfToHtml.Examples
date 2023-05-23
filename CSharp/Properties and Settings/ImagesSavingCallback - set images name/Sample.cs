@@ -18,7 +18,7 @@ namespace Example
         /// </summary>
         static void UsingImagesSavingCallback()
         {
-            string inpFile = @"..\..\example.docx";
+            string inpFile = @"..\..\..\example.docx";
             string outFile = Path.GetFullPath(@"Result.html");
             string imgDir = Path.GetDirectoryName(outFile);
 

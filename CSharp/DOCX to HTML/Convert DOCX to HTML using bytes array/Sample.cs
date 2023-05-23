@@ -19,7 +19,7 @@ namespace Example
         static void ConvertDocxToHtml()
         {
             // The files are necessary only to get input data and show the result.
-            string inpFile = @"..\..\example.docx";
+            string inpFile = @"..\..\..\example.docx";
             string outfile = Path.GetFullPath("Result.html");
 
 

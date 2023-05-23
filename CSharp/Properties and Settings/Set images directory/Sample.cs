@@ -18,7 +18,7 @@ namespace Example
         /// </summary>
         static void SetImagesDirectory()
         {
-            string inpFile = @"..\..\example.docx";
+            string inpFile = @"..\..\..\example.docx";
             string outFile = Path.GetFullPath(@"Result2.html");
             string imgDir = Path.GetDirectoryName(outFile);
 

@@ -18,7 +18,7 @@ namespace Example
         /// </summary>
         static void ConvertDocxToHtml()
         {
-            string inpFile = @"..\..\example.docx";
+            string inpFile = @"..\..\..\example.docx";
             byte[] docxBytes = File.ReadAllBytes(inpFile);
             string htmlString = String.Empty;
             

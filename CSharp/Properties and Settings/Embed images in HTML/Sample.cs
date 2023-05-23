@@ -22,7 +22,7 @@ namespace Example
             // 1. HTML-document which have linked images.
             // 2. HTML-document with embedded images.
 
-            string inpFile = @"..\..\example.docx";
+            string inpFile = @"..\..\..\example.docx";
             string htmlFileNonEmbeddedImg = Path.GetFullPath(@"NonEmbedded.html");
             string imgDir = Path.GetDirectoryName(htmlFileNonEmbeddedImg);
 
