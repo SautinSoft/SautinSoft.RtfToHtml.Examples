@@ -14,7 +14,7 @@ Namespace Example
 		''' How to set directory to store images.
 		''' </summary>
 		Private Shared Sub SetImagesDirectory()
-			Dim inpFile As String = "..\example.docx"
+			Dim inpFile As String = "..\..\..\example.docx"
 			Dim outFile As String = Path.GetFullPath("Result.html")
 			Dim imgDir As String = Path.GetDirectoryName(outFile)
 

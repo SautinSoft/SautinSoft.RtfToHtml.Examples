@@ -15,7 +15,7 @@ Namespace Example
         ''' </summary>
         Private Shared Sub ConvertTextToHtml()
             ' The files are necessary only to get input data and show the result.
-            Dim inpFile As String = "..\example.txt"
+            Dim inpFile As String = "..\..\..\example.txt"
             Dim outfile As String = Path.GetFullPath("Result.html")
 
 

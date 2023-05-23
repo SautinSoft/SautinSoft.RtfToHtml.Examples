@@ -14,7 +14,7 @@ Namespace Example
 		''' Let's convert 1st, 3rd and 5th pages.
 		''' </summary>
 		Private Shared Sub PageIndexAndCount()
-			Dim inpFile As String = "..\example.docx"
+			Dim inpFile As String = "..\..\..\example.docx"
 			Dim outFile As String = "Result.html"
 
 			Dim r As New RtfToHtml()

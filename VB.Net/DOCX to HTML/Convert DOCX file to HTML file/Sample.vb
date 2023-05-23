@@ -14,7 +14,7 @@ Namespace Example
 		''' Convert DOCX file to HTML file.
 		''' </summary>
 		Private Shared Sub ConvertDocxToHtml()
-			Dim inpFile As String = "..\example.docx"
+			Dim inpFile As String = "..\..\..\example.docx"
 			Dim outfile As String = Path.GetFullPath("Result.html")
 
 			Dim r As New RtfToHtml()

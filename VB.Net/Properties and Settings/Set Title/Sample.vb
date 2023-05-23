@@ -14,7 +14,7 @@ Namespace Example
 		''' This sample shows how to set title for HTML-document.
 		''' </summary>
 		Private Shared Sub SetTitle()
-			Dim inpFile As String = "..\example.docx"
+			Dim inpFile As String = "..\..\..\example.docx"
 			Dim outFile As String = "Result.html"
 
 			Dim r As New RtfToHtml()

@@ -24,7 +24,7 @@ Namespace Example
 			Dim r As New RtfToHtml()
 
 
-			Dim inpFile As String = "..\example.docx"
+			Dim inpFile As String = "..\..\..\example.docx"
 			Dim outFile As String = "Result.html"
 
 			r.Convert(inpFile, outFile, New HtmlFixedSaveOptions() With {.Title = "SautinSoft.RtfToHtml Activation"})

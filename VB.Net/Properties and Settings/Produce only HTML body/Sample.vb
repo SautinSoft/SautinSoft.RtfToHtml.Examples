@@ -14,7 +14,7 @@ Namespace Example
         ''' How to produce HTML document only between &lt;body&gt;...&lt;/body&gt; tags.
         ''' </summary>
         Private Shared Sub ProduceOnlyHtmlBody()
-			Dim inpFile As String = "..\example.docx"
+			Dim inpFile As String = "..\..\..\example.docx"
 			Dim outFile As String = "Result.html"
 
 			Dim r As New RtfToHtml()

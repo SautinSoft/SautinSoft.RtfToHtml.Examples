@@ -14,7 +14,7 @@ Namespace Example
 		''' This sample shows how to set HTML version: xhtml, html5, html401, html32.
 		''' </summary>
 		Private Shared Sub SetHtmlVersion()
-			Dim inpFile As String = "..\example.docx"
+			Dim inpFile As String = "..\..\..\example.docx"
 			Dim outFile As String = "Result.html"
 
 			Dim r As New RtfToHtml()

@@ -15,7 +15,7 @@ Namespace Example
 		''' </summary>
 		Private Shared Sub ConvertDocxToHtml()
 			' This file is necessary to get DOCX content as byte array.
-			Dim inpFile As String = "..\example.docx"
+			Dim inpFile As String = "..\..\..\example.docx"
 			Dim docxBytes() As Byte = File.ReadAllBytes(inpFile)
 
 			Dim outfile As String = Path.GetFullPath("Result.html")

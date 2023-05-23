@@ -14,7 +14,7 @@ Namespace Example
 		''' Converts Text file to HTML file.
 		''' </summary>
 		Private Shared Sub ConvertTextToHtml()
-			Dim inpFile As String = "..\example.txt"
+			Dim inpFile As String = "..\..\..\example.txt"
 			Dim outfile As String = Path.GetFullPath("Result.html")
 
 			Dim r As New RtfToHtml()

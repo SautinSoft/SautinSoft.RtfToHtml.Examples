@@ -18,7 +18,7 @@ Namespace Example
             ' 1. HTML-document which have linked images.
             ' 2. HTML-document with embedded images.
 
-            Dim inpFile As String = "..\example.docx"
+            Dim inpFile As String = "..\..\..\example.docx"
             Dim htmlFileNonEmbeddedImg As String = Path.GetFullPath("NonEmbedded.html")
             Dim imgDir As String = Path.GetDirectoryName(htmlFileNonEmbeddedImg)
 

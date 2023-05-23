@@ -14,7 +14,7 @@ Namespace Example
 		''' Specifies how the document should be split when saving to Html format.
 		''' </summary>
 		Private Shared Sub SplitCriteria()
-			Dim inpFile As String = "..\toc.docx"
+			Dim inpFile As String = "..\..\..\toc.docx"
 			Dim outFile As String = "toc.html"
 
 			Dim r As New RtfToHtml()

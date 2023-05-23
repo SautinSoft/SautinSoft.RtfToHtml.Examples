@@ -14,7 +14,7 @@ Namespace Example
 		''' Converts RTF file to HTML string.
 		''' </summary>
 		Private Shared Sub ConvertRtfToHtml()
-			Dim inpFile As String = "..\example.rtf"
+			Dim inpFile As String = "..\..\..\example.rtf"
 			Dim htmlString As String = String.Empty
 
 			Dim r As New RtfToHtml()

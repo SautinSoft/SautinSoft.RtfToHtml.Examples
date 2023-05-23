@@ -14,7 +14,7 @@ Namespace Example
 		''' Set page custom margins.
 		''' </summary>
 		Private Shared Sub PageMargins()
-			Dim inpFile As String = "..\example.docx"
+			Dim inpFile As String = "..\..\..\example.docx"
 			Dim outFile As String = "Result.html"
 
 			Dim r As New RtfToHtml()

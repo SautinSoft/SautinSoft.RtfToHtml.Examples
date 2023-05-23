@@ -14,7 +14,7 @@ Namespace Example
 		''' Convert DOCX bytes to HTML string.
 		''' </summary>
 		Private Shared Sub ConvertDocxToHtml()
-			Dim inpFile As String = "..\example.docx"
+			Dim inpFile As String = "..\..\..\example.docx"
 			Dim docxBytes() As Byte = File.ReadAllBytes(inpFile)
 			Dim htmlString As String = String.Empty
 

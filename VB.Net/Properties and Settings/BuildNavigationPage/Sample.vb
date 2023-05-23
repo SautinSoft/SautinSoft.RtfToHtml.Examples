@@ -14,7 +14,7 @@ Namespace Example
 		''' This sample shows how to generate a navigation page (like a TOC - table of contents).
 		''' </summary>
 		Private Shared Sub BuildNavigationPage()
-			Dim inpFile As String = "..\toc.docx"
+			Dim inpFile As String = "..\..\..\toc.docx"
 			Dim outFile As String = "Result.html"
 
 			Dim r As New RtfToHtml()

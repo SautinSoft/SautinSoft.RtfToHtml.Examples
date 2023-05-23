@@ -14,7 +14,7 @@ Namespace Example
 		''' Make invisible page border.
 		''' </summary>
 		Private Shared Sub PageBorder()
-			Dim inpFile As String = "..\example.docx"
+			Dim inpFile As String = "..\..\..\example.docx"
 			Dim outFile As String = "Result.html"
 
 			Dim r As New RtfToHtml()

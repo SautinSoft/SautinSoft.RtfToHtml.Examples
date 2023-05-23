@@ -14,7 +14,7 @@ Namespace Example
 		''' How to convert to HTML document and set single font family a whole text.
 		''' </summary>
 		Private Shared Sub SetSingleFontFamily()
-			Dim inpFile As String = "..\example.docx"
+			Dim inpFile As String = "..\..\..\example.docx"
 			Dim outFile As String = "Result.html"
 
 			Dim r As New RtfToHtml()

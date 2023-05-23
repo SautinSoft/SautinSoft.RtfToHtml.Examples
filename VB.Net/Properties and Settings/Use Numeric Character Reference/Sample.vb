@@ -14,7 +14,7 @@ Namespace Example
 		''' This sample shows how to use Numeric Character Reference.
 		''' </summary>
 		Private Shared Sub UseNumericCharacterReference()
-			Dim inpFile As String = "..\utf-8.rtf"
+			Dim inpFile As String = "..\..\..\utf-8.rtf"
 			Dim outFile As String = "Result.html"
 
 			Dim r As New RtfToHtml()

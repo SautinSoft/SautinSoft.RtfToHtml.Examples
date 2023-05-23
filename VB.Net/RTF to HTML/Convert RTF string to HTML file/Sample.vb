@@ -15,7 +15,7 @@ Namespace Example
 		''' </summary>
 		Private Shared Sub ConvertRtfToHtml()
 			' This file is necessary to get RTF content as string.
-			Dim inpFile As String = "..\example.rtf"
+			Dim inpFile As String = "..\..\..\example.rtf"
 			Dim rtfString As String = File.ReadAllText(inpFile)
 
 			Dim outfile As String = Path.GetFullPath("Result.html")

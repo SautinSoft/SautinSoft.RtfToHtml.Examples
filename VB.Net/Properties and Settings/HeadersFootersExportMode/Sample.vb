@@ -14,7 +14,7 @@ Namespace Example
 		''' This sample shows how to export headers and footers.
 		''' </summary>
 		Private Shared Sub HeadersFootersExportMode()
-			Dim inpFile As String = "..\doc with header and footer.docx"
+			Dim inpFile As String = "..\..\..\doc with header and footer.docx"
 			Dim outFile As String = "Result.html"
 
 			Dim r As New RtfToHtml()

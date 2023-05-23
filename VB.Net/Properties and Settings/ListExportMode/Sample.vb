@@ -14,7 +14,7 @@ Namespace Example
 		''' This sample shows how to specify list export mode.
 		''' </summary>
 		Private Shared Sub ListExportMode()
-			Dim inpFile As String = "..\example.docx"
+			Dim inpFile As String = "..\..\..\example.docx"
 			Dim outFile As String = "Result.html"
 
 			Dim r As New RtfToHtml()

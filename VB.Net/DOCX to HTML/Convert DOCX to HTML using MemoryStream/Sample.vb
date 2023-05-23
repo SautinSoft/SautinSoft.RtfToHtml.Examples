@@ -15,7 +15,7 @@ Namespace Example
         ''' </summary>
         Private Shared Sub ConvertDocxToHtml()
 			' The files are necessary only to get input data and show the result.
-			Dim inpFile As String = "..\example.docx"
+			Dim inpFile As String = "..\..\..\example.docx"
 			Dim outfile As String = Path.GetFullPath("Result.html")
 
 			Dim r As New RtfToHtml()

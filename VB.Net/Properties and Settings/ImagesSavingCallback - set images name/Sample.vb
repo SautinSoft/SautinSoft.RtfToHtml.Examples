@@ -14,7 +14,7 @@ Namespace Example
 		''' How to use image saving callback and set a template name for all images.
 		''' </summary>
 		Private Shared Sub UsingImagesSavingCallback()
-			Dim inpFile As String = "..\example.docx"
+			Dim inpFile As String = "..\..\..\example.docx"
 			Dim outFile As String = Path.GetFullPath("Result.html")
 			Dim imgDir As String = Path.GetDirectoryName(outFile)
 
