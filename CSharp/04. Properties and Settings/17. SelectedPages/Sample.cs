@@ -14,7 +14,7 @@ namespace Example
             PageIndexAndCount();
         }
         /// <summary>
-        /// Let's convert 1st, 3rd and 5th pages.
+        /// Let's convert 1st and 3rd pages.
         /// </summary>
         static void PageIndexAndCount()
         {
@@ -23,11 +23,11 @@ namespace Example
 
             RtfToHtml r = new RtfToHtml();
 
-            // Let's convert pages: 1, 3 and 5.
+            // Let's convert pages: 1, 3.
             HtmlFixedSaveOptions opt = new HtmlFixedSaveOptions()
             {
-                Title = "Pages 1, 3, 5",
-                SelectedPages = new int[] {0, 2, 4}
+                Title = "Pages 1, 3",
+                SelectedPages = new int[] {0, 2}
             };
 
             try

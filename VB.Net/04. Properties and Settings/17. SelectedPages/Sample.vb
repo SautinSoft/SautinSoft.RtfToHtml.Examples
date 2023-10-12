@@ -11,7 +11,7 @@ Namespace Example
 			PageIndexAndCount()
 		End Sub
 		''' <summary>
-		''' Let's convert 1st, 3rd and 5th pages.
+		''' Let's convert 1st and 3rd pages.
 		''' </summary>
 		Private Shared Sub PageIndexAndCount()
 			Dim inpFile As String = "..\..\..\example.docx"
@@ -19,10 +19,10 @@ Namespace Example
 
 			Dim r As New RtfToHtml()
 
-			' Let's convert pages: 1, 3 and 5.
+			' Let's convert pages: 1, 3.
 			Dim opt As New HtmlFixedSaveOptions() With {
-				.Title = "Pages 1, 3, 5",
-				.SelectedPages = New Integer() {0, 2, 4}
+				.Title = "Pages 1, 3",
+				.SelectedPages = New Integer() {0, 2}
 			}
 
 			Try
