@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
-using SautinSoft.RtfToHtml;
+using SautinSoft;
 
 namespace Example
 {
@@ -24,9 +24,9 @@ namespace Example
             RtfToHtml r = new RtfToHtml();
 
             // Let's convert to the HTML 3.2
-            HtmlFlowingSaveOptions opt = new HtmlFlowingSaveOptions()
+            RtfToHtml.HtmlFlowingSaveOptions opt = new RtfToHtml.HtmlFlowingSaveOptions()
             {
-                Version = HtmlVersion.Html32
+                Version = RtfToHtml.HtmlVersion.Html32
             };
 
             try

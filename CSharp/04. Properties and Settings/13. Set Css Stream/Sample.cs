@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
-using SautinSoft.RtfToHtml;
+using SautinSoft;
 
 namespace Example
 {
@@ -27,11 +27,11 @@ namespace Example
             // Create a separate file to store css.
             FileStream fs = new FileStream(cssFile, FileMode.Create);
 
-            HtmlFlowingSaveOptions opt = new HtmlFlowingSaveOptions()
+            RtfToHtml.HtmlFlowingSaveOptions opt = new RtfToHtml.HtmlFlowingSaveOptions()
             {
                 CssStream = fs,
                 KeepCssStreamOpen = false,
-                CssExportMode = CssExportMode.External,
+                CssExportMode = RtfToHtml.CssExportMode.External,
                 CssFileName = cssFile,
                 Title = "Working with CSS."
             };

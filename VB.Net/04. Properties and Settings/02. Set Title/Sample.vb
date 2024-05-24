@@ -3,7 +3,7 @@ Imports System.Collections.Generic
 Imports System.Linq
 Imports System.Text
 Imports System.IO
-Imports SautinSoft.RtfToHtml
+Imports SautinSoft
 
 Namespace Example
 	Friend Class Program
@@ -20,7 +20,7 @@ Namespace Example
 			Dim r As New RtfToHtml()
 
 			' Set the document title
-			Dim opt As New HtmlFixedSaveOptions() With {.Title = "This document has a title :)"}
+			Dim opt As new RtfToHtml.HtmlFixedSaveOptions() With {.Title = "This document has a title :)"}
 
 			Try
 				r.Convert(inpFile, outFile, opt)

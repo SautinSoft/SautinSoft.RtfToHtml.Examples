@@ -3,7 +3,7 @@ Imports System.Collections.Generic
 Imports System.Linq
 Imports System.Text
 Imports System.IO
-Imports SautinSoft.RtfToHtml
+Imports SautinSoft
 
 Namespace Example
     Friend Class Program
@@ -28,7 +28,7 @@ Namespace Example
 
 
             ' 1. Convert to HTML with linked images.
-            Dim opt As New HtmlFixedSaveOptions() With {
+            Dim opt As new RtfToHtml.HtmlFixedSaveOptions() With {
                 .ImagesDirectoryPath = Path.Combine(imgDir, "Result_images"),
                 .ImagesDirectorySrcPath = "Result_images",
                 .EmbedImages = False,

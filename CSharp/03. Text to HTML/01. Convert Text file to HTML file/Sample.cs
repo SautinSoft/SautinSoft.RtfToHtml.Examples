@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
-using SautinSoft.RtfToHtml;
+using SautinSoft;
 
 namespace Example
 {
@@ -22,7 +22,7 @@ namespace Example
             string outfile = Path.GetFullPath("Result.html");
             
             RtfToHtml r = new RtfToHtml();
-            r.Convert(inpFile, outfile, new HtmlFixedSaveOptions() {Title = "SautinSoft Example." });
+            r.Convert(inpFile, outfile, new RtfToHtml.HtmlFixedSaveOptions() {Title = "SautinSoft Example." });
 
             // Open the result for demonstration purposes.
             System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(outfile) { UseShellExecute = true });

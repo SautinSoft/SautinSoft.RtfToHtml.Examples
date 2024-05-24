@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
-using SautinSoft.RtfToHtml;
+using SautinSoft;
 
 namespace Example
 {
@@ -30,7 +30,7 @@ namespace Example
             string inpFile = @"..\..\..\example.docx";
             string outFile = "Result.html";
 
-            r.Convert(inpFile, outFile, new HtmlFixedSaveOptions() { Title = "SautinSoft.RtfToHtml Activation" });
+            r.Convert(inpFile, outFile, new RtfToHtml.HtmlFixedSaveOptions() { Title = "SautinSoft.RtfToHtml Activation" });
 
             // Open the result for demonstration purposes.
             System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(outFile) { UseShellExecute = true });

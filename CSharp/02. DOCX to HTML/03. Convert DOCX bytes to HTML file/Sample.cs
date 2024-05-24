@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
-using SautinSoft.RtfToHtml;
+using SautinSoft;
 
 namespace Example
 {
@@ -30,7 +30,7 @@ namespace Example
             {
                 using (MemoryStream outMS = new MemoryStream())
                 {
-                    r.Convert(inpMS, outMS, new HtmlFixedSaveOptions() { Title = "SautinSoft Example." });
+                    r.Convert(inpMS, outMS, new RtfToHtml.HtmlFixedSaveOptions() { Title = "SautinSoft Example." });
                     File.WriteAllBytes(outfile, outMS.ToArray());
                 }
             }            

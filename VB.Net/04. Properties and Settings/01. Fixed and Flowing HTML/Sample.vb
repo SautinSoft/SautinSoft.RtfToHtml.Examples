@@ -3,7 +3,7 @@ Imports System.Collections.Generic
 Imports System.Linq
 Imports System.Text
 Imports System.IO
-Imports SautinSoft.RtfToHtml
+Imports SautinSoft
 
 Namespace Example
 	Friend Class Program
@@ -24,7 +24,7 @@ Namespace Example
 			' 1. Convert to HTML-fixed.
 			' The HTML in the fixed mode represents HTML document with pages and elements positioned by (x,y).
 			Try
-				r.Convert(inpFile, htmlFixedFile, New HtmlFixedSaveOptions() With {
+				r.Convert(inpFile, htmlFixedFile, new RtfToHtml.HtmlFixedSaveOptions() With {
 					.Title = "Fixed",
 					.PageMargins = 20F
 				})
@@ -36,7 +36,7 @@ Namespace Example
 			' The HTML in the flowing mode represents HTML document like a created by a human
 			' extended by a whole browser width.
 			Try
-				r.Convert(inpFile, htmlFlowingFile, New HtmlFlowingSaveOptions() With {.Title = "Flowing"})
+				r.Convert(inpFile, htmlFlowingFile, New RtfToHtml.HtmlFlowingSaveOptions() With {.Title = "Flowing"})
 			Catch ex As Exception
 				Console.WriteLine($"Conversion failed! {ex.Message}")
 			End Try

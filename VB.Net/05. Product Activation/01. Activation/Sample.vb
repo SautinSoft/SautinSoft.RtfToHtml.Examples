@@ -3,7 +3,7 @@ Imports System.Collections.Generic
 Imports System.Linq
 Imports System.Text
 Imports System.IO
-Imports SautinSoft.RtfToHtml
+Imports SautinSoft
 
 Namespace Example
 	Friend Class Program
@@ -27,7 +27,7 @@ Namespace Example
 			Dim inpFile As String = "..\..\..\example.docx"
 			Dim outFile As String = "Result.html"
 
-			r.Convert(inpFile, outFile, New HtmlFixedSaveOptions() With {.Title = "SautinSoft.RtfToHtml Activation"})
+			r.Convert(inpFile, outFile, new RtfToHtml.HtmlFixedSaveOptions() With {.Title = "SautinSoft.RtfToHtml Activation"})
 
 			' Open the result for demonstration purposes.
 			System.Diagnostics.Process.Start(New System.Diagnostics.ProcessStartInfo(outFile) With {.UseShellExecute = True})

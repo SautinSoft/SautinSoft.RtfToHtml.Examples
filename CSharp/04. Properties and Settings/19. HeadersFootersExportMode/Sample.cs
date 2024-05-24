@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
-using SautinSoft.RtfToHtml;
+using SautinSoft;
 
 namespace Example
 {
@@ -23,9 +23,9 @@ namespace Example
 
             RtfToHtml r = new RtfToHtml();
 
-            HtmlFlowingSaveOptions opt = new HtmlFlowingSaveOptions()
+            RtfToHtml.HtmlFlowingSaveOptions opt = new RtfToHtml.HtmlFlowingSaveOptions()
             {
-                HeadersFootersExportMode = HtmlHeadersFootersExportMode.FirstSectionHeaderLastSectionFooter
+                HeadersFootersExportMode = RtfToHtml.HtmlHeadersFootersExportMode.FirstSectionHeaderLastSectionFooter
             };
 
             try

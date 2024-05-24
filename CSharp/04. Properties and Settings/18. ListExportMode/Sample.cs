@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
-using SautinSoft.RtfToHtml;
+using SautinSoft;
 
 namespace Example
 {
@@ -24,9 +24,9 @@ namespace Example
             RtfToHtml r = new RtfToHtml();
 
             // Use <p> tags for list elements.
-            HtmlFlowingSaveOptions opt = new HtmlFlowingSaveOptions()
+            RtfToHtml.HtmlFlowingSaveOptions opt = new RtfToHtml.HtmlFlowingSaveOptions()
             {
-                ListExportMode = HtmlListExportMode.AsInlineText
+                ListExportMode = RtfToHtml.HtmlListExportMode.AsInlineText
             };
 
             try

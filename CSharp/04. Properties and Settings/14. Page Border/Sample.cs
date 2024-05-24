@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
-using SautinSoft.RtfToHtml;
+using SautinSoft;
 
 namespace Example
 {
@@ -24,7 +24,7 @@ namespace Example
             RtfToHtml r = new RtfToHtml();
 
             // Set invisible page border.
-            HtmlFixedSaveOptions opt = new HtmlFixedSaveOptions()
+            RtfToHtml.HtmlFixedSaveOptions opt = new RtfToHtml.HtmlFixedSaveOptions()
             {
                 Title = "No Page Border.",
                 PageBorder = false

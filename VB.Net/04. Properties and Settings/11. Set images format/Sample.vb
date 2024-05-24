@@ -3,7 +3,7 @@ Imports System.Collections.Generic
 Imports System.Linq
 Imports System.Text
 Imports System.IO
-Imports SautinSoft.RtfToHtml
+Imports SautinSoft
 
 Namespace Example
 	Friend Class Program
@@ -20,15 +20,15 @@ Namespace Example
 
 			Dim r As New RtfToHtml()
 
-            ' 1. Set PNG format.
-            Dim opt As New HtmlFixedSaveOptions() With {
-                .ImagesDirectoryPath = Path.Combine(imgDir, "Result_images"),
-                .ImagesDirectorySrcPath = "Result_images",
-                .EmbedImages = False,
-                .ImagesFormat = HtmlSaveOptions.EmbImagesFormat.Png,
-                .Title = "HTML document, PNG images"
-            }
-            Try
+			' 1. Set PNG format.
+			Dim opt As New RtfToHtml.HtmlFixedSaveOptions() With {
+				.ImagesDirectoryPath = Path.Combine(imgDir, "Result_images"),
+				.ImagesDirectorySrcPath = "Result_images",
+				.EmbedImages = False,
+				.ImageFormat = RtfToHtml.HtmlSaveOptions.ImagesFormat.Png,
+				.Title = "HTML document, PNG images"
+			}
+			Try
 				r.Convert(inpFile, outFile, opt)
 			Catch ex As Exception
 				Console.WriteLine($"Conversion failed! {ex.Message}")

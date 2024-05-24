@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
-using SautinSoft.RtfToHtml;
+using SautinSoft;
 
 namespace Example
 {
@@ -25,13 +25,13 @@ namespace Example
             RtfToHtml r = new RtfToHtml();
 
             // 1. Set JPEG format and quality.
-            HtmlFixedSaveOptions opt = new HtmlFixedSaveOptions()
+            RtfToHtml.HtmlFixedSaveOptions opt = new RtfToHtml.HtmlFixedSaveOptions()
             {
                 ImagesDirectoryPath = Path.Combine(imgDir, "Result_images"),
                 ImagesDirectorySrcPath = "Result_images",
                 // Change to store images as physical files on local drive.
                 EmbedImages = false,
-                ImagesFormat = HtmlSaveOptions.EmbImagesFormat.Jpeg,
+                ImageFormat = RtfToHtml.HtmlSaveOptions.ImagesFormat.Jpeg,                
                 JpegQuality = 50,
                 Title = "JPEG images, 50% quality"
             };

@@ -3,7 +3,7 @@ Imports System.Collections.Generic
 Imports System.Linq
 Imports System.Text
 Imports System.IO
-Imports SautinSoft.RtfToHtml
+Imports SautinSoft
 
 Namespace Example
 	Friend Class Program
@@ -20,7 +20,7 @@ Namespace Example
 			Dim r As New RtfToHtml()
 
 			' Let's convert pages: 1, 3.
-			Dim opt As New HtmlFixedSaveOptions() With {
+			Dim opt As new RtfToHtml.HtmlFixedSaveOptions() With {
 				.Title = "Pages 1, 3",
 				.SelectedPages = New Integer() {0, 2}
 			}

@@ -3,7 +3,7 @@ Imports System.Collections.Generic
 Imports System.Linq
 Imports System.Text
 Imports System.IO
-Imports SautinSoft.RtfToHtml
+Imports SautinSoft
 
 Namespace Example
 	Friend Class Program
@@ -21,7 +21,7 @@ Namespace Example
 
 			Using inpReader As New StreamReader(inpFile)
 				Using resultStream As New MemoryStream()
-					r.Convert(inpReader.BaseStream, resultStream, New HtmlFixedSaveOptions() With {.Title = "SautinSoft Example."})
+					r.Convert(inpReader.BaseStream, resultStream, new RtfToHtml.HtmlFixedSaveOptions() With {.Title = "SautinSoft Example."})
 					htmlString = Encoding.UTF8.GetString(resultStream.ToArray())
 				End Using
 			End Using

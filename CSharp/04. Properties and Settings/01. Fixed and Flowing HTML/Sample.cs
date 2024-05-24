@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
-using SautinSoft.RtfToHtml;
+using SautinSoft;
 
 namespace Example
 {
@@ -29,7 +29,7 @@ namespace Example
             // The HTML in the fixed mode represents HTML document with pages and elements positioned by (x,y).
             try
             {
-                r.Convert(inpFile, htmlFixedFile, new HtmlFixedSaveOptions() { Title = "Fixed", PageMargins = 20f });
+                r.Convert(inpFile, htmlFixedFile, new RtfToHtml.HtmlFixedSaveOptions() { Title = "Fixed", PageMargins = 20f });
             }
             catch (Exception ex)
             {
@@ -41,7 +41,7 @@ namespace Example
             // extended by a whole browser width.
             try
             {
-                r.Convert(inpFile, htmlFlowingFile, new HtmlFlowingSaveOptions() { Title = "Flowing"});
+                r.Convert(inpFile, htmlFlowingFile, new RtfToHtml.HtmlFlowingSaveOptions() { Title = "Flowing"});
             }
             catch (Exception ex)
             {

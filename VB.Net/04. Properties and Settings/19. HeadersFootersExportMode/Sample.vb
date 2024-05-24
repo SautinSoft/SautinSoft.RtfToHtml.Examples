@@ -3,7 +3,7 @@ Imports System.Collections.Generic
 Imports System.Linq
 Imports System.Text
 Imports System.IO
-Imports SautinSoft.RtfToHtml
+Imports SautinSoft
 
 Namespace Example
 	Friend Class Program
@@ -19,7 +19,7 @@ Namespace Example
 
 			Dim r As New RtfToHtml()
 
-			Dim opt As New HtmlFlowingSaveOptions() With {.HeadersFootersExportMode = HtmlHeadersFootersExportMode.FirstSectionHeaderLastSectionFooter}
+			Dim opt As New RtfToHtml.HtmlFlowingSaveOptions() With {.HeadersFootersExportMode = RtfToHtml.HtmlHeadersFootersExportMode.FirstSectionHeaderLastSectionFooter}
 
 			Try
 				r.Convert(inpFile, outFile, opt)

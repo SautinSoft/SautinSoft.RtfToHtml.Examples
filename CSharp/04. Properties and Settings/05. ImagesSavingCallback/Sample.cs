@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
-using SautinSoft.RtfToHtml;
+using SautinSoft;
 
 namespace Example
 {
@@ -25,7 +25,7 @@ namespace Example
             RtfToHtml r = new RtfToHtml();
 
             // Set images directory
-            HtmlFixedSaveOptions opt = new HtmlFixedSaveOptions()
+            RtfToHtml.HtmlFixedSaveOptions opt = new RtfToHtml.HtmlFixedSaveOptions()
             {
                 ImagesDirectoryPath = Path.Combine(imgDir, "Result_images"),
                 ImagesDirectorySrcPath = "Result_images",
@@ -47,10 +47,10 @@ namespace Example
             System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(outFile) { UseShellExecute = true });
         }
     }
-    public class SaveImagesOpt : IHtmlImageSavingCallback
+    public class SaveImagesOpt : RtfToHtml.IHtmlImageSavingCallback
     {
         public string TemplateImageName { get; set; } = "picture";
-        public void ImageSaving(SautinSoft.Document.HtmlImageSavingArgs args)
+        public void ImageSaving(RtfToHtml.HtmlImageSavingArgs args)
         {
             args.ImageFileName = args.ImageFileName.Replace("image", TemplateImageName);
         }

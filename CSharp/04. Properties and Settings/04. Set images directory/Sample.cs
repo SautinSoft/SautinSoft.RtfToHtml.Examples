@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
-using SautinSoft.RtfToHtml;
+using SautinSoft;
 
 namespace Example
 {
@@ -25,7 +25,7 @@ namespace Example
             RtfToHtml r = new RtfToHtml();
 
             // Set images directory
-            HtmlFixedSaveOptions opt = new HtmlFixedSaveOptions()
+            RtfToHtml.HtmlFixedSaveOptions opt = new RtfToHtml.HtmlFixedSaveOptions()
             {
                 ImagesDirectoryPath = Path.Combine(imgDir, "Result_images"),
                 ImagesDirectorySrcPath = "Result_images",

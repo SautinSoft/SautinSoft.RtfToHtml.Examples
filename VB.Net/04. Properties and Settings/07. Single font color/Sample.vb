@@ -3,7 +3,7 @@ Imports System.Collections.Generic
 Imports System.Linq
 Imports System.Text
 Imports System.IO
-Imports SautinSoft.RtfToHtml
+Imports SautinSoft
 
 Namespace Example
 	Friend Class Program
@@ -19,7 +19,7 @@ Namespace Example
 
 			Dim r As New RtfToHtml()
 
-			Dim opt As New HtmlFixedSaveOptions() With {.SingleFontColor = New Color(34, 139, 39)}
+			Dim opt As New RtfToHtml.HtmlFixedSaveOptions() With {.SingleFontColor = New RtfToHtml.Color(34, 139, 39)}
 
 			Try
 				r.Convert(inpFile, outFile, opt)

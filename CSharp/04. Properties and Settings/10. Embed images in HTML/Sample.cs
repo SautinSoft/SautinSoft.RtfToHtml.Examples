@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
-using SautinSoft.RtfToHtml;
+using SautinSoft;
 
 namespace Example
 {
@@ -32,7 +32,7 @@ namespace Example
 
 
             // 1. Convert to HTML with linked images.
-            HtmlFixedSaveOptions opt = new HtmlFixedSaveOptions()
+            RtfToHtml.HtmlFixedSaveOptions opt = new RtfToHtml.HtmlFixedSaveOptions()
             {
                 ImagesDirectoryPath = Path.Combine(imgDir, "Result_images"),
                 ImagesDirectorySrcPath = "Result_images",

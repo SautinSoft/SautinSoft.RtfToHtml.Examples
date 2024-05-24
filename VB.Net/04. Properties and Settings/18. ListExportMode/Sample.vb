@@ -3,7 +3,7 @@ Imports System.Collections.Generic
 Imports System.Linq
 Imports System.Text
 Imports System.IO
-Imports SautinSoft.RtfToHtml
+Imports SautinSoft
 
 Namespace Example
 	Friend Class Program
@@ -20,7 +20,7 @@ Namespace Example
 			Dim r As New RtfToHtml()
 
 			' Use <p> tags for list elements.
-			Dim opt As New HtmlFlowingSaveOptions() With {.ListExportMode = HtmlListExportMode.AsInlineText}
+			Dim opt As New RtfToHtml.HtmlFlowingSaveOptions() With {.ListExportMode = RtfToHtml.HtmlListExportMode.AsInlineText}
 
 			Try
 				r.Convert(inpFile, outFile, opt)

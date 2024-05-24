@@ -3,7 +3,7 @@ Imports System.Collections.Generic
 Imports System.Linq
 Imports System.Text
 Imports System.IO
-Imports SautinSoft.RtfToHtml
+Imports SautinSoft
 
 Namespace Example
 	Friend Class Program
@@ -20,7 +20,7 @@ Namespace Example
 			Dim r As New RtfToHtml()
 
 			' Let's convert to the HTML 3.2
-			Dim opt As New HtmlFlowingSaveOptions() With {.Version = HtmlVersion.Html32}
+			Dim opt As New RtfToHtml.HtmlFlowingSaveOptions() With {.Version = RtfToHtml.HtmlVersion.Html32}
 
 			Try
 				r.Convert(inpFile, outFile, opt)

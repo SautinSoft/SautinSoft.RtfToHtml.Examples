@@ -3,7 +3,7 @@ Imports System.Collections.Generic
 Imports System.Linq
 Imports System.Text
 Imports System.IO
-Imports SautinSoft.RtfToHtml
+Imports SautinSoft
 
 Namespace Example
 	Friend Class Program
@@ -23,10 +23,10 @@ Namespace Example
 			' Create a separate file to store css.
 			Dim fs As New FileStream(cssFile, FileMode.Create)
 
-			Dim opt As New HtmlFlowingSaveOptions() With {
+			Dim opt As New RtfToHtml.HtmlFlowingSaveOptions() With {
 				.CssStream = fs,
 				.KeepCssStreamOpen = False,
-				.CssExportMode = CssExportMode.External,
+				.CssExportMode = RtfToHtml.CssExportMode.External,
 				.CssFileName = cssFile,
 				.Title = "Working with CSS."
 			}

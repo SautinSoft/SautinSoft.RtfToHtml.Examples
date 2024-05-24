@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
-using SautinSoft.RtfToHtml;
+using SautinSoft;
 
 namespace Example
 {
@@ -24,10 +24,10 @@ namespace Example
             RtfToHtml r = new RtfToHtml();
 
             // Set page margins 30 mm.
-            HtmlFixedSaveOptions opt = new HtmlFixedSaveOptions()
+            RtfToHtml.HtmlFixedSaveOptions opt = new RtfToHtml.HtmlFixedSaveOptions()
             {
                 Title = "Page Margins 30 mm",
-                PageMargins = LengthUnitConverter.Convert(30, LengthUnit.Millimeter, LengthUnit.Point)
+                PageMargins = RtfToHtml.LengthUnitConverter.Convert(30, RtfToHtml.LengthUnit.Millimeter, RtfToHtml.LengthUnit.Point)
             };
 
             try

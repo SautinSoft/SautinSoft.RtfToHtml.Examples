@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
-using SautinSoft.RtfToHtml;
+using SautinSoft;
 
 namespace Example
 {
@@ -25,7 +25,7 @@ namespace Example
 
             // Set properties to produce HTML document only
             // between &lt;body&gt;...&lt;/body&gt; tags
-            HtmlFlowingSaveOptions opt = new HtmlFlowingSaveOptions()
+            RtfToHtml.HtmlFlowingSaveOptions opt = new RtfToHtml.HtmlFlowingSaveOptions()
             {
                 ProduceOnlyHtmlBody = true
             };

@@ -3,7 +3,7 @@ Imports System.Collections.Generic
 Imports System.Linq
 Imports System.Text
 Imports System.IO
-Imports SautinSoft.RtfToHtml
+Imports SautinSoft
 
 Namespace Example
 	Friend Class Program
@@ -20,9 +20,9 @@ Namespace Example
 			Dim r As New RtfToHtml()
 
 			' Set page margins 30 mm.
-			Dim opt As New HtmlFixedSaveOptions() With {
+			Dim opt As New RtfToHtml.HtmlFixedSaveOptions() With {
 				.Title = "Page Margins 30 mm",
-				.PageMargins = LengthUnitConverter.Convert(30, LengthUnit.Millimeter, LengthUnit.Point)
+				.PageMargins = RtfToHtml.LengthUnitConverter.Convert(30, RtfToHtml.LengthUnit.Millimeter, RtfToHtml.LengthUnit.Point)
 			}
 
 			Try

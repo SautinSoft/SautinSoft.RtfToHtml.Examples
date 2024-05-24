@@ -3,7 +3,7 @@ Imports System.Collections.Generic
 Imports System.Linq
 Imports System.Text
 Imports System.IO
-Imports SautinSoft.RtfToHtml
+Imports SautinSoft
 
 Namespace Example
 	Friend Class Program
@@ -21,7 +21,7 @@ Namespace Example
 			Dim r As New RtfToHtml()
 
 			' Set images directory
-			Dim opt As New HtmlFixedSaveOptions() With {
+			Dim opt As new RtfToHtml.HtmlFixedSaveOptions() With {
 				.ImagesDirectoryPath = Path.Combine(imgDir, "Result_images"),
 				.ImagesDirectorySrcPath = "Result_images",
 				.EmbedImages = False,
@@ -39,12 +39,12 @@ Namespace Example
 		End Sub
 	End Class
 	Public Class SaveImagesOpt
-        Implements SautinSoft.Document.IHtmlImageSavingCallback
+		Implements RtfToHtml.IHtmlImageSavingCallback
 
-        Public Property TemplateImageName() As String = "picture"
+		Public Property TemplateImageName() As String = "picture"
 
-        Private Sub IHtmlImageSavingCallback_ImageSaving(args As SautinSoft.Document.HtmlImageSavingArgs) Implements SautinSoft.Document.IHtmlImageSavingCallback.ImageSaving
-            args.ImageFileName = args.ImageFileName.Replace("image", TemplateImageName)
-        End Sub
-    End Class
+		Private Sub IHtmlImageSavingCallback_ImageSaving(args As RtfToHtml.HtmlImageSavingArgs) Implements RtfToHtml.IHtmlImageSavingCallback.ImageSaving
+			args.ImageFileName = args.ImageFileName.Replace("image", TemplateImageName)
+		End Sub
+	End Class
 End Namespace

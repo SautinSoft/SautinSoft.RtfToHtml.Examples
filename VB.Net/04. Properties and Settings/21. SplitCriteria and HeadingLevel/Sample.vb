@@ -3,7 +3,7 @@ Imports System.Collections.Generic
 Imports System.Linq
 Imports System.Text
 Imports System.IO
-Imports SautinSoft.RtfToHtml
+Imports SautinSoft
 
 Namespace Example
 	Friend Class Program
@@ -19,8 +19,8 @@ Namespace Example
 
 			Dim r As New RtfToHtml()
 
-			Dim opt As New HtmlFlowingSaveOptions() With {
-				.SplitCriteria = HtmlSplitCriteria.PageBreak,
+			Dim opt As New RtfToHtml.HtmlFlowingSaveOptions() With {
+				.SplitCriteria = RtfToHtml.HtmlSplitCriteria.PageBreak,
 				.SplitHeadingLevel = 2
 			}
 
