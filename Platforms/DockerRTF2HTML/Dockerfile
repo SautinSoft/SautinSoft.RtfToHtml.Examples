@@ -1,0 +1,36 @@
+FROM mcr.microsoft.com/dotnet/runtime:8.0 AS base
+WORKDIR /app
+
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /src
+COPY ["R2HDocker.csproj", ""]
+RUN dotnet restore "./R2HDocker.csproj"
+COPY . .
+WORKDIR "/src/."
+RUN dotnet build "R2HDocker.csproj" -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish "R2HDocker.csproj" -c Release -o /app/publish /p:UseAppHost=false
+
+FROM base AS final
+
+# Update package sources to include supplemental packages (contrib archive area).
+RUN sed -i 's/main/main contrib/g' /etc/apt/sources.list.d/debian.sources
+
+# Downloads the package lists from the repositories.
+RUN apt-get update
+
+# Install font configuration.
+RUN apt-get install -y fontconfig
+
+# Install Microsoft TrueType core fonts.
+RUN apt-get install -y ttf-mscorefonts-installer
+
+# Or install Liberation TrueType fonts.
+# RUN apt-get install -y fonts-liberation
+
+# Or some other font package...
+
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "R2HDocker.dll"]
