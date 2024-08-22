@@ -18,6 +18,12 @@ namespace Example
         /// </summary>
         static void UseNumericCharacterReference()
         {
+			// Get your free 100-day key here:   
+            // https://sautinsoft.com/start-for-free/
+			
+            // If you need more information about "RTF to HTML .Net" 
+            // Email us at: support@sautinsoft.com.
+			
             string inpFile = @"..\..\..\utf-8.rtf";
             string outFile = @"Result.html";
 

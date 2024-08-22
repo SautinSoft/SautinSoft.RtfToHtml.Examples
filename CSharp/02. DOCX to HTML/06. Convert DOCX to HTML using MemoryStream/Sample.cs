@@ -18,6 +18,12 @@ namespace Example
         /// </summary>
         static void ConvertDocxToHtml()
         {
+			// Get your free 100-day key here:   
+            // https://sautinsoft.com/start-for-free/
+			
+            // If you need more information about "RTF to HTML .Net" 
+            // Email us at: support@sautinsoft.com.
+			
             // The files are necessary only to get input data and show the result.
             string inpFile = @"..\..\..\example.docx";
             string outfile = Path.GetFullPath("Result.html");

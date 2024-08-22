@@ -14,6 +14,11 @@ Namespace Example
 		''' Converts Text file to HTML file.
 		''' </summary>
 		Private Shared Sub ConvertTextToHtml()
+				    ' Get your free 100-day key here:   
+            ' https://sautinsoft.com/start-for-free/
+			
+            ' If you need more information about "RTF to HTML .Net" 
+            ' Email us at: support@sautinsoft.com.
 			Dim inpFile As String = "..\..\..\example.txt"
 			Dim outfile As String = Path.GetFullPath("Result.html")
 

@@ -14,6 +14,11 @@ Namespace Example
 		''' This sample shows how to export headers and footers.
 		''' </summary>
 		Private Shared Sub HeadersFootersExportMode()
+				    ' Get your free 100-day key here:   
+            ' https://sautinsoft.com/start-for-free/
+			
+            ' If you need more information about "RTF to HTML .Net" 
+            ' Email us at: support@sautinsoft.com.
 			Dim inpFile As String = "..\..\..\doc with header and footer.docx"
 			Dim outFile As String = "Result.html"
 

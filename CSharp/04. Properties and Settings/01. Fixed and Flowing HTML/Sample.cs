@@ -18,6 +18,12 @@ namespace Example
         /// </summary>
         static void FixedAndFlowingHtml()
         {
+			// Get your free 100-day key here:   
+            // https://sautinsoft.com/start-for-free/
+			
+            // If you need more information about "RTF to HTML .Net" 
+            // Email us at: support@sautinsoft.com.
+			
             // This file is necessary to get DOCX content as byte array.
             string inpFile = @"..\..\..\example.docx";
             string htmlFixedFile = @"Fixed.html";

@@ -14,6 +14,11 @@ Namespace Example
 		''' Set page custom margins.
 		''' </summary>
 		Private Shared Sub PageMargins()
+				    ' Get your free 100-day key here:   
+            ' https://sautinsoft.com/start-for-free/
+			
+            ' If you need more information about "RTF to HTML .Net" 
+            ' Email us at: support@sautinsoft.com.
 			Dim inpFile As String = "..\..\..\example.docx"
 			Dim outFile As String = "Result.html"
 

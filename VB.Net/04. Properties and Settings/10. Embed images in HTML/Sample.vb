@@ -18,6 +18,11 @@ Namespace Example
             ' 1. HTML-document which have linked images.
             ' 2. HTML-document with embedded images.
 
+		    ' Get your free 100-day key here:   
+            ' https://sautinsoft.com/start-for-free/
+			
+            ' If you need more information about "RTF to HTML .Net" 
+            ' Email us at: support@sautinsoft.com.
             Dim inpFile As String = "..\..\..\example.docx"
             Dim htmlFileNonEmbeddedImg As String = Path.GetFullPath("NonEmbedded.html")
             Dim imgDir As String = Path.GetDirectoryName(htmlFileNonEmbeddedImg)

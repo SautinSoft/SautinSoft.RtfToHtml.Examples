@@ -14,6 +14,12 @@ Namespace Example
 		''' How to set images format.
 		''' </summary>
 		Private Shared Sub SetImagesFormat()
+		
+				    ' Get your free 100-day key here:   
+            ' https://sautinsoft.com/start-for-free/
+			
+            ' If you need more information about "RTF to HTML .Net" 
+            ' Email us at: support@sautinsoft.com.
 			Dim inpFile As String = "..\..\..\example.docx"
 			Dim outFile As String = Path.GetFullPath("Result.html")
 			Dim imgDir As String = Path.GetDirectoryName(outFile)

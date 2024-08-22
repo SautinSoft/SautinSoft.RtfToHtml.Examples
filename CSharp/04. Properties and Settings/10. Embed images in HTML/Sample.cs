@@ -18,6 +18,12 @@ namespace Example
         /// </summary>
         static void EmbedImages()
         {
+			// Get your free 100-day key here:   
+            // https://sautinsoft.com/start-for-free/
+			
+            // If you need more information about "RTF to HTML .Net" 
+            // Email us at: support@sautinsoft.com.
+			
             // Here we'll convert to two HTML documents:
             // 1. HTML-document which have linked images.
             // 2. HTML-document with embedded images.

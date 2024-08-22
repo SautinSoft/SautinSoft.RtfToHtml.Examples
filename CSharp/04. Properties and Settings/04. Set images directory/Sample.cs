@@ -18,6 +18,12 @@ namespace Example
         /// </summary>
         static void SetImagesDirectory()
         {
+			// Get your free 100-day key here:   
+            // https://sautinsoft.com/start-for-free/
+			
+            // If you need more information about "RTF to HTML .Net" 
+            // Email us at: support@sautinsoft.com.
+			
             string inpFile = @"..\..\..\example.docx";
             string outFile = Path.GetFullPath(@"Result2.html");
             string imgDir = Path.GetDirectoryName(outFile);

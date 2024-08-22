@@ -18,6 +18,12 @@ namespace Example
         /// </summary>
         static void HeadersFootersExportMode()
         {
+			// Get your free 100-day key here:   
+            // https://sautinsoft.com/start-for-free/
+			
+            // If you need more information about "RTF to HTML .Net" 
+            // Email us at: support@sautinsoft.com.
+			
             string inpFile = @"..\..\..\doc with header and footer.docx";
             string outFile = @"Result.html";
 

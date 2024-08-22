@@ -18,6 +18,12 @@ namespace Example
         /// </summary>
         static void PageMargins()
         {
+			// Get your free 100-day key here:   
+            // https://sautinsoft.com/start-for-free/
+			
+            // If you need more information about "RTF to HTML .Net" 
+            // Email us at: support@sautinsoft.com.
+			
             string inpFile = @"..\..\..\example.docx";
             string outFile = @"Result.html";
 

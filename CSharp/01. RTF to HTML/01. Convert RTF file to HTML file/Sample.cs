@@ -18,6 +18,13 @@ namespace Example
         /// </summary>
         static void ConvertRtfToHtml()
         {
+			
+			// Get your free 100-day key here:   
+            // https://sautinsoft.com/start-for-free/
+			
+            // If you need more information about "RTF to HTML .Net" 
+            // Email us at: support@sautinsoft.com.
+
             string inpFile = @"..\..\..\example.rtf";
             string outfile = Path.GetFullPath("Result.html");
             
