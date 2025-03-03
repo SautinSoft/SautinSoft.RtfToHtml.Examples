@@ -14,7 +14,7 @@ Namespace Example
 		''' This sample shows how to set HTML version: xhtml, html5, html401, html32.
 		''' </summary>
 		Private Shared Sub SetHtmlVersion()
-				    ' Get your free 100-day key here:   
+				    ' Get your free key here:   
             ' https://sautinsoft.com/start-for-free/
 			
             ' If you need more information about "RTF to HTML .Net" 

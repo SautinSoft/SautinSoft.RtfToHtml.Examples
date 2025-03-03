@@ -14,7 +14,7 @@ Namespace Example
 		''' This sample shows how to export headers and footers.
 		''' </summary>
 		Private Shared Sub HeadersFootersExportMode()
-				    ' Get your free 100-day key here:   
+				    ' Get your free key here:   
             ' https://sautinsoft.com/start-for-free/
 			
             ' If you need more information about "RTF to HTML .Net" 

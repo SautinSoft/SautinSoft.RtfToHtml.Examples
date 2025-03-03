@@ -14,7 +14,7 @@ Namespace Example
 		''' How to set jpeg quality.
 		''' </summary>
 		Private Shared Sub SetJpegQuality()
-				    ' Get your free 100-day key here:   
+				    ' Get your free key here:   
             ' https://sautinsoft.com/start-for-free/
 			
             ' If you need more information about "RTF to HTML .Net" 

@@ -14,7 +14,7 @@ Namespace Example
 		''' This sample shows how to use Numeric Character Reference.
 		''' </summary>
 		Private Shared Sub UseNumericCharacterReference()
-				    ' Get your free 100-day key here:   
+				    ' Get your free key here:   
             ' https://sautinsoft.com/start-for-free/
 			
             ' If you need more information about "RTF to HTML .Net" 

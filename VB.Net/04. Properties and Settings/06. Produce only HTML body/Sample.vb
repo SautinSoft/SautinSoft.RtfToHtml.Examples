@@ -14,7 +14,7 @@ Namespace Example
         ''' How to produce HTML document only between &lt;body&gt;...&lt;/body&gt; tags.
         ''' </summary>
         Private Shared Sub ProduceOnlyHtmlBody()
-				    ' Get your free 100-day key here:   
+				    ' Get your free key here:   
             ' https://sautinsoft.com/start-for-free/
 			
             ' If you need more information about "RTF to HTML .Net" 

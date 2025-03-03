@@ -14,7 +14,7 @@ Namespace Example
 		''' Let's convert 1st and 3rd pages.
 		''' </summary>
 		Private Shared Sub PageIndexAndCount()
-				    ' Get your free 100-day key here:   
+				    ' Get your free key here:   
             ' https://sautinsoft.com/start-for-free/
 			
             ' If you need more information about "RTF to HTML .Net" 

@@ -14,7 +14,7 @@ Namespace Example
 		''' How to use image saving callback and set a template name for all images.
 		''' </summary>
 		Private Shared Sub ImagesCallback()
-				    ' Get your free 100-day key here:   
+				    ' Get your free key here:   
             ' https://sautinsoft.com/start-for-free/
 			
             ' If you need more information about "RTF to HTML .Net" 

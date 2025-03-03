@@ -14,7 +14,7 @@ Namespace Example
 		''' How to set directory to store images.
 		''' </summary>
 		Private Shared Sub SetImagesDirectory()
-				    ' Get your free 100-day key here:   
+				    ' Get your free key here:   
             ' https://sautinsoft.com/start-for-free/
 			
             ' If you need more information about "RTF to HTML .Net" 

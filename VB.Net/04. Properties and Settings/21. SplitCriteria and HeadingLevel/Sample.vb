@@ -14,7 +14,7 @@ Namespace Example
 		''' Specifies how the document should be split when saving to Html format.
 		''' </summary>
 		Private Shared Sub SplitCriteria()
-				    ' Get your free 100-day key here:   
+				    ' Get your free key here:   
             ' https://sautinsoft.com/start-for-free/
 			
             ' If you need more information about "RTF to HTML .Net" 

@@ -14,7 +14,7 @@ Namespace Example
 		''' How to convert to HTML document and set single font size a whole text.
 		''' </summary>
 		Private Shared Sub SetSingleFontSize()
-				    ' Get your free 100-day key here:   
+				    ' Get your free key here:   
             ' https://sautinsoft.com/start-for-free/
 			
             ' If you need more information about "RTF to HTML .Net" 

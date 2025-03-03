@@ -14,7 +14,7 @@ Namespace Example
 		''' Make invisible page border.
 		''' </summary>
 		Private Shared Sub PageBorder()
-				    ' Get your free 100-day key here:   
+				    ' Get your free key here:   
             ' https://sautinsoft.com/start-for-free/
 			
             ' If you need more information about "RTF to HTML .Net" 
