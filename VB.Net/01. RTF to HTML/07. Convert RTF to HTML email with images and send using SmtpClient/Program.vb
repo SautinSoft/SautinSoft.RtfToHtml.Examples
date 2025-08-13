@@ -56,13 +56,13 @@ Namespace Sample
 
 			For Each imgPath As String In imageList
 				Using inputStream = File.OpenRead(imgPath)
-					Using skBitmap = SKBitmap.Decode(inputStream)
+					Using skBitmap = SkiaSharp.SKBitmap.Decode(inputStream)
 						If skBitmap IsNot Nothing Then
 							Dim ms = New MemoryStream()
-							Using skImage = SKImage.FromBitmap(skBitmap)
-							Using data = skImage.Encode(SKEncodedImageFormat.Png, 100)
-								data.SaveTo(ms)
-							End Using
+							Using skImage = SkiaSharp.SKImage.FromBitmap(skBitmap)
+								Using data = skImage.Encode(SKEncodedImageFormat.Png, 100)
+									data.SaveTo(ms)
+								End Using
 							End Using
 
 							ms.Position = 0

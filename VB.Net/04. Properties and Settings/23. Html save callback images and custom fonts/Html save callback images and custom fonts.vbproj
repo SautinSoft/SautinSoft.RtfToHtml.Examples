@@ -9,6 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="SautinSoft.RtfToHtml" Version="2025.3.25" />
+    <PackageReference Include="SautinSoft.RtfToHtml" Version="*" />
   </ItemGroup>
 </Project>
